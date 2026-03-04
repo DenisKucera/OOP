@@ -8,5 +8,11 @@ string testovaciText = "Toto je retezec predstavovany nekolika radky,\n"
 
 
 StringStatistic st_1 = new(testovaciText);
-//st_1.print_string();
-st_1.print_words();
+
+st_1.text_info();
+Console.WriteLine("Vypis nejkratsich slov:");
+Console.WriteLine(string.Join("\n",st_1.short_words()));
+Console.WriteLine("Vypis nejdelsich slov:");
+Console.WriteLine(string.Join("\n",st_1.long_words()));
+Console.WriteLine("Vypis podle abecedy:");
+Console.WriteLine(string.Join("\n",st_1.alphabet()));
