@@ -1,0 +1,4 @@
+CREATE DATABASE Vyuka;
+GO
+USE Vyuka;
+GO
